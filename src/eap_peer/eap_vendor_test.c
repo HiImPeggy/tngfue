@@ -1707,7 +1707,7 @@ void eap_vendor_test_ikev2_conn(struct eap_sm *sm, void *priv)
 	data->ikev2.sa.proposal = malloc(sizeof (struct ikev2_proposal_data));
 	data->ikev2.sa.proposal[0].integ = 2; // AUTH_HMAC_SHA1_96
 	data->ikev2.sa.proposal[0].prf = 2; // PRF_HMAC_SHA1
-	data->ikev2.sa.proposal[0].encr = 12; // ENCR_AES_CBC
+	data->ikev2.sa.proposal[0].encr = 11; // ENCR_NULL
 	data->ikev2.sa.proposal[0].dh = 14; // DH_2048_BIT_MODP
 	data->ikev2.sa.proposal[0].esn = 0; // Extended Sequence Numbers
 	data->ikev2.sa.proposal[0].proposal_num = 1;
